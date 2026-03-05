@@ -9,7 +9,6 @@ const EU_COUNTRIES = new Set([
 
 function mapCountryToCurrency(countryCode: string): string {
   if (countryCode === 'MA') return 'MAD';
-  if (countryCode === 'HK') return 'HKD';
   if (EU_COUNTRIES.has(countryCode)) return 'EUR';
   return 'USD';
 }
